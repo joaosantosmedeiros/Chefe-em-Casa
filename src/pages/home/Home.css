@@ -19,7 +19,7 @@ h1 {
   background-color: white;
   margin-bottom: 30px;
   max-width: 22.5vw;
-  height: 35vh;
+  height: 40vh;
   flex-basis: calc(27%);
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
@@ -51,5 +51,8 @@ h1 {
 
 .meal-content h4, .meal-content p {
   margin: 10px 0 10px 0;
-  /* height: 20%; */
+}
+
+.meal-content h4{
+  height: 22%;
 }

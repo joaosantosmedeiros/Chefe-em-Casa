@@ -2,6 +2,7 @@ import './Home.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Meal from '../../helpers/meal';
+import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -26,7 +27,7 @@ function Home() {
         {mealList.map((meal: Meal) => (
           <div className='meal' key={meal.idMeal}>
             <div className='meal-image'>
-              <a target='blank' href={'ola'}><img src={meal.strMealThumb} alt={meal.strMeal} /></a>
+              <Link target='blank' to={`meal/${meal.idMeal}`} ><img src={meal.strMealThumb} alt={meal.strMeal} /></Link>
             </div>
             <div className="meal-content">
               <h4>{meal.strMeal}</h4>

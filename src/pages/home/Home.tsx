@@ -1,12 +1,12 @@
 import './Home.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import Meal from '../../helpers/meal';
+import IMeal from '../../helpers/meal';
 import { Link } from 'react-router-dom';
 
 
 function Home() {
-  const [mealList, setMealList] = useState<Meal[]>([]);
+  const [mealList, setMealList] = useState<IMeal[]>([]);
   useEffect(() => {
     const fetchRandomMeal = async () => {
       const res = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php');
@@ -24,7 +24,7 @@ function Home() {
     <section>
       <h1>Receitas Aleatórias</h1>
       <div className='meals-list'>
-        {mealList.map((meal: Meal) => (
+        {mealList.map((meal: IMeal) => (
           <div className='meal' key={meal.idMeal}>
             <div className='meal-image'>
               <Link target='blank' to={`meal/${meal.idMeal}`} ><img src={meal.strMealThumb} alt={meal.strMeal} /></Link>

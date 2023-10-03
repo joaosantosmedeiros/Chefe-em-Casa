@@ -1,4 +1,4 @@
-export default interface Meal {
+export default interface IMeal {
   idMeal: number;
   strMeal: string;
   strArea: string;
@@ -6,6 +6,7 @@ export default interface Meal {
   strSource: string;
   strYoutube: string;
   strMealThumb: string;
+  strCategory: string;
   strInstructions: string;
   strIngredient1?: string;
   strIngredient2?: string;

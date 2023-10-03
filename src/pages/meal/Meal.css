@@ -1,0 +1,14 @@
+#unique-meal-section{
+  margin: 0 30%;
+}
+
+.meal-unique h1{
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.meal-info {
+  display: flex;
+  gap: 8em;
+}

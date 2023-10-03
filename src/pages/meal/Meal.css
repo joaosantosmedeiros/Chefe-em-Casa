@@ -2,13 +2,37 @@
   margin: 0 30%;
 }
 
-.meal-unique h1{
-  padding: 0;
-  text-align: center;
-  justify-content: center;
+.meal-unique img {
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
 .meal-info {
   display: flex;
   gap: 8em;
+}
+
+.meal-content {
+  padding: 0;
+}
+
+.meal-recipe {
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+}
+
+.meal-links{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.meal-links a{
+  text-decoration: none;
+}
+
+ol {
+  padding: 0 0 0 30px;
 }

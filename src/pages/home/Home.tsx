@@ -33,7 +33,7 @@ function Home() {
               <h4>{meal.strMeal}</h4>
               <p>{meal.strInstructions.substring(0, 70)}</p>
               <div className="meal-link">
-                <a target='blank' href={meal.strYoutube}><button>Youtube</button></a>
+                <Link id='youtube-link' target='blank' to={meal.strYoutube}><button>Youtube</button></Link>
               </div>
             </div>
           </div>

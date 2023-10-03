@@ -1,17 +1,31 @@
 section {
   min-height: 100vh;
+  margin: 0 8% 0 18%;
 }
 
 h1 {
   color: rgb(255, 53, 53);
 }
 
-.meals-list, h1{
+.meals-list,
+h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
-  padding: 0 230px;
+  /* padding: 0 230px; */
   align-items: center;
+}
+
+#youtube-link {
+  flex-grow: 1;
+  display: flex;
+  padding: 0 10px;
+  cursor: pointer;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
 }
 
 .meal {
@@ -36,8 +50,12 @@ h1 {
   height: 55%;
 }
 
+.meal-image a {
+  padding: 0;
+}
+
 .meal-image img {
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 
@@ -48,10 +66,12 @@ h1 {
   border-bottom-left-radius: 20px;
 }
 
-.meal-content h4, .meal-content p {
+.meal-content h4,
+.meal-content p {
   margin: 10px 0 10px 0;
+  padding: 0 10px;
 }
 
-.meal-content h4{
+.meal-content h4 {
   height: 22%;
 }

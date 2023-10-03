@@ -1,15 +1,24 @@
+import { Link } from 'react-router-dom';
 import './Header.css'
 
 export default function Header() {
   return (
     <header>
       <div className="home-btn">
-        <label id='home'>Home</label>
+        <Link to={'/'} id='home'>Home</Link>
       </div>
-      <div className='nav-bar'>
-        <label id='search-label'>Pesquisar Receitas <img src="/search.svg" id='search-icon' color='white' width={"22.5px"} /></label>
-        <label>Receitas por Letra</label>
-        <label>Receitas por Ingredientes</label>
+      <div className='navbar'>
+        <li>
+          <ul>
+            <Link to={'/by-name'} id='search-link'>Pesquisar Receitas <img src="/search.svg" id='search-icon' color='white' width={"22.5px"} /></Link>
+          </ul>
+          <ul>
+            <Link to={'/by-letter'} >Receitas por Letra</Link>
+          </ul>
+          <ul>
+            <Link to={'/by-ingredient'}>Receitas por Ingredientes</Link>
+          </ul>
+        </li>
       </div>
     </header>
   );

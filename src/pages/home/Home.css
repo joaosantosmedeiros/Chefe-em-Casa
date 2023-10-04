@@ -1,19 +1,16 @@
 section {
   min-height: 100vh;
-  margin: 0 8% 0 18%;
+  margin: 0 18% 0 18%;
 }
 
 h1 {
   color: rgb(255, 53, 53);
 }
 
-.meals-list,
-h1 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2em;
-  /* padding: 0 230px; */
-  align-items: center;
+.meals-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px;   
 }
 
 #youtube-link {
@@ -39,7 +36,7 @@ h1 {
 }
 
 .meal:hover {
-  transform: scale(1.075);
+  transform: scale(1.035);
   transition: all 0.15s;
 }
 

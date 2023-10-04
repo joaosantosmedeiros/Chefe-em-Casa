@@ -1,0 +1,33 @@
+.search-recipe {
+  margin-bottom: 50px;
+}
+
+.search-recipe h1 {
+  margin-bottom: 30px;
+}
+
+.search-recipe input {
+  padding: 5px 15px;
+  color: black;
+  font-size: medium;
+  background-color: white;
+  border-radius: 25px;
+  width: 83%;
+  height: 3vh;
+  border-style: solid;
+  border-color: rgb(238, 94, 94);
+}
+
+.search-recipe input:focus{
+  outline: 2px solid #e8c2c2;  
+
+}
+
+.search-recipe input::placeholder {
+  font-style: italic;
+}
+
+.search-input:focus {
+  outline-color: rgb(238, 94, 94);
+  outline-width: 12px;
+}

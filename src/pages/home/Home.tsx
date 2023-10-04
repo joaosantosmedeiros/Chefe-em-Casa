@@ -27,7 +27,7 @@ function Home() {
         {mealList.map((meal: IMeal) => (
           <div className='meal' key={meal.idMeal}>
             <div className='meal-image'>
-              <Link target='blank' to={`meal/${meal.idMeal}`} ><img src={meal.strMealThumb} alt={meal.strMeal} /></Link>
+              <Link to={`meal/${meal.idMeal}`} ><img src={meal.strMealThumb} alt={meal.strMeal} /></Link>
             </div>
             <div className="meal-content">
               <h4>{meal.strMeal}</h4>

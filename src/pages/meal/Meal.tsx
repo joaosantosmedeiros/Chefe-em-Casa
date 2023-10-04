@@ -22,22 +22,29 @@ export default function Meal() {
   }, [mealId]);
 
 
-  const ingredients = [];
-  const measures = [];
+  const ingredients: string[] = [];
+  const measures: string[] = [];
   if (meal) {
     for (let i = 1; i <= 20; i++) {
-      const valor = meal[`strIngredient${i}`];
+      const valor = meal[`strIngredient${i}` as keyof IMeal];
 
-      if (valor !== null && valor.trim() !== "") {
-        ingredients.push(valor);
+      if (typeof valor == "string") {
+        if (valor !== null && valor.trim() !== "") {
+          ingredients.push(valor);
+        }
+      }
+
+    }
+
+    for (let i = 1; i <= 20; i++) {
+      const measure = meal[`strMeasure${i}` as keyof IMeal];
+
+      if (typeof measure == 'string') {
+        if (measure !== null && measure.trim() !== "") {
+          measures.push(measure);
+        }
       }
     }
-
-    for (let i = 0; i < ingredients.length; i++) {
-      measures.push(meal[`strMeasure${i + 1}`])
-    }
-
-    console.log(ingredients, measures)
   }
 
   return (

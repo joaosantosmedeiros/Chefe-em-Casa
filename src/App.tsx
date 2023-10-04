@@ -4,6 +4,8 @@ import Header from "./components/header/Header"
 import Home from "./pages/home/Home"
 import Meal from "./pages/meal/Meal"
 import ByName from "./pages/by-name/By-name"
+import ByLetter from "./pages/by-letter/By-letter"
+import ByIngredient from "./pages/by-ingredient/By-ingredient"
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/meal/:mealId" element={<Meal />} />
         <Route path="/by-name" element={<ByName />} />
+        <Route path="/by-ingredient" element={<ByIngredient />} />
+        <Route path="/by-letter" element={<ByLetter />} />
       </Routes>
       <Footer />
     </>

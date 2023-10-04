@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import IMeal from '../../helpers/meal';
-import { Link } from 'react-router-dom';
 import './By-name.css'
+import MealsList from '../../components/meals-list/Meal-list';
 
 export default function ByName() {
   const [search, setSearch] = useState('');
@@ -33,26 +33,7 @@ export default function ByName() {
         <h1>Pesquisar Receita</h1>
         <input placeholder='Fish Stew' onChange={(event) => { setSearch(event.target.value); }} />
       </div>
-      <div className="meals-list">
-        {mealList.map((meal: IMeal) => (
-          <div className="meal" key={meal.idMeal}>
-            <div className="meal-image">
-              <Link to={`/meal/${meal.idMeal}`}>
-                <img src={meal.strMealThumb} alt={meal.strMeal} />
-              </Link>
-            </div>
-            <div className="meal-content">
-              <h4>{meal.strMeal}</h4>
-              <p>{meal.strInstructions.substring(0, 70)}</p>
-              <div className="meal-link">
-                <Link id="youtube-link" target="_blank" to={meal.strYoutube}>
-                  <button>Youtube</button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <MealsList mealList={mealList}/>
     </section>
   );
 }

@@ -2,7 +2,7 @@ import './Home.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import IMeal from '../../helpers/meal';
-import { Link } from 'react-router-dom';
+import MealsList from '../../components/meals-list/Meal-list';
 
 
 function Home() {
@@ -23,22 +23,7 @@ function Home() {
   return (
     <section>
       <h1>Receitas Aleatórias</h1>
-      <div className='meals-list'>
-        {mealList.map((meal: IMeal) => (
-          <div className='meal' key={meal.idMeal}>
-            <div className='meal-image'>
-              <Link to={`meal/${meal.idMeal}`} ><img src={meal.strMealThumb} alt={meal.strMeal} /></Link>
-            </div>
-            <div className="meal-content">
-              <h4>{meal.strMeal}</h4>
-              <p>{meal.strInstructions.substring(0, 70)}</p>
-              <div className="meal-link">
-                <Link id='youtube-link' target='blank' to={meal.strYoutube}><button>Youtube</button></Link>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      <MealsList mealList={mealList}/>
     </section>
   );
 }

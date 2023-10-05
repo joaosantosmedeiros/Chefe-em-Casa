@@ -1,18 +1,40 @@
 #letters{
+  display: flex; 
+   justify-content: center;
+   margin-bottom: 45px; 
+   gap: 25px; 
+}
+
+.a-m, .n-z {
+  margin-top: 10px;
   display: flex;
-  gap: 1em;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 45px;
+  justify-content: center;;
+  gap: 25px;
 }
 
 #letters label {
   color: rgb(255, 109, 109);
-  text-decoration: underline;
 }
 
 #letters label:hover {
   cursor: pointer;
   transform: scale(1.35);
   transition: all 0.25s;
+}
+
+@media screen and (max-width: 768px) {
+  #by-letter{
+    display: block;
+  }
+
+  #letters {
+    max-width: 100%;
+    display: block;
+  }
+
+  .a-m, .n-z {
+    justify-content: space-evenly;
+    gap: 0;
+  }
+
 }

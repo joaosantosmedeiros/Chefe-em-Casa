@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom"
 import IMeal from "../../helpers/meal";
 import './Meal.css'
 
-export default function Meal() {
+export default function   Meal() {
   const param = useParams();
   const mealId = param.mealId;
 

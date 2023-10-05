@@ -24,3 +24,19 @@
   transform: scale(1.025);
   transition: all .2s;
 }
+
+@media screen and (max-width: 768px) {
+  .ingredients-search {
+    align-self: start;
+
+  }
+
+  .ingredients-list{
+    grid-template-columns: 1fr;
+  }
+
+  .ingredients-search h1{
+    font-size: 40px;
+    padding: 0;
+  }
+}

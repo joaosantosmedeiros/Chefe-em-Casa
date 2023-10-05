@@ -26,3 +26,14 @@ footer p{
   transform: scale(1.2);
   transition: all 0.15s;
 }
+
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 0 15px;
+  }
+
+  footer p {
+    font-size: 11px;
+  }
+}

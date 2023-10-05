@@ -75,10 +75,11 @@
   
   .meals-list {
     display: block;
+    width: 100%;
   }
 
   .meal {
-    max-width: 50vw;
+    max-width: 70vw;
     height: auto;
   }
 

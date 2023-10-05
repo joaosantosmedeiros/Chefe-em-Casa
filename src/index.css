@@ -94,3 +94,9 @@ input:focus {
     height: 41px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  h1{
+    font-size: 2.8em;
+  }
+}

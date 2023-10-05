@@ -63,3 +63,18 @@ header {
   color: rgba(255, 255, 255, 0.87);
   transition: all 0.5s;
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    gap: 5em;
+  }
+
+  #search-link img{
+    display: none;
+  }
+
+  .navbar {
+    font-size: small;
+  }
+
+}

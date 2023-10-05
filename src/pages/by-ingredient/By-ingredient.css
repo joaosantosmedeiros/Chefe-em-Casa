@@ -1,0 +1,26 @@
+.ingredients-search {
+  margin-bottom: 40px;
+}
+
+.ingredients-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.ingredients-list a {
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  height: 60px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ingredients-list a:hover {
+  transform: scale(1.025);
+  transition: all .2s;
+}

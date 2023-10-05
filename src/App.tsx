@@ -6,6 +6,7 @@ import Meal from "./pages/meal/Meal"
 import ByName from "./pages/by-name/By-name"
 import ByLetter from "./pages/by-letter/By-letter"
 import ByIngredient from "./pages/by-ingredient/By-ingredient"
+import MealByIngredient from "./pages/meal-by-ingredient/Meal-by-ingredient"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/meal/:mealId" element={<Meal />} />
         <Route path="/by-name" element={<ByName />} />
         <Route path="/by-ingredient" element={<ByIngredient />} />
+        <Route path="/by-ingredient/:ingredient" element={<MealByIngredient />} />
         <Route path="/by-letter" element={<ByLetter />} />
       </Routes>
       <Footer />

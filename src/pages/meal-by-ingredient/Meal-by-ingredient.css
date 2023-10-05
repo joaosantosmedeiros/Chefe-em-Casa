@@ -1,0 +1,40 @@
+.meals-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px;   
+}
+
+.meal-ing {
+  background-color: white;
+  margin-bottom: 30px;
+  max-width: 22.5vw;
+  height: 28vh;
+  flex-basis: calc(27%);
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.meal-ing:hover {
+  transform: scale(1.035);
+  transition: all 0.15s;
+}
+
+.meal-image-ing {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: hidden;
+  height: 78%;
+}
+
+.meal-image-ing img {
+  width: 100%;
+  height: auto;
+}
+
+.meal-ing h4{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 20px;
+  height: 22%;
+}

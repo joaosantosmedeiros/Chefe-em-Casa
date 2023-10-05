@@ -33,6 +33,7 @@ header {
   align-items: stretch;
   display: flex;
   padding: 0 15px 0 0;
+  gap: 2em;
 }
 
 .navbar li ul {
@@ -89,7 +90,6 @@ header {
 
   .header-link {
     box-sizing: border-box;
-    /* padding: 0; */
   }
 
   #search-link img{

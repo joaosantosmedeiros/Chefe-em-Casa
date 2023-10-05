@@ -36,3 +36,22 @@
 ol {
   padding: 0 0 0 30px;
 }
+
+@media screen and (max-width: 768px) {
+  #unique-meal-section{
+    margin: 0;
+  }
+
+  .meal-unique img{
+    width: 100%;
+  }
+
+  .meal-unique{
+    width: 70%;
+  }
+
+  .meal-info {
+    gap: 0;
+    justify-content: space-between;
+  }
+}

@@ -7,26 +7,33 @@ header {
   box-shadow: 0 4px 6px rgba(255, 53, 53, 0.4);
 }
 
+.home-btn{
+  width: 10vw;
+}
+
 .navbar {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: flex-end;
+  padding: 0 15px 0 0;
+  width: 50%;
 }
 
 .navbar a:hover {
   background-color: azure;
-  color: rgb(255, 53, 53);
+  color: #ff3535;
   transition: all 0.5s;
 }
 
-#search-icon {
-  filter: invert(100%);
+.navbar a:hover :first-child {
+    fill: #ff3535;
+    transition: all .5s;
 }
 
 .navbar li {
   align-items: stretch;
   display: flex;
-  padding: 0;
+  padding: 0 15px 0 0;
+  gap: 2em;
 }
 
 .navbar li ul {
@@ -35,6 +42,7 @@ header {
 }
 
 .header-link {
+  width: 100%;
   flex-grow: 1;
   display: flex;
   padding: 0 10px;
@@ -51,7 +59,6 @@ header {
 }
 
 #home {
-  width: 80px;
   color: rgb(255, 53, 53);
   background-color: rgba(255, 255, 255, 0.87);
   display: flex;
@@ -60,7 +67,13 @@ header {
 
 #home:hover {
   background-color: rgb(255, 53, 53);
+  fill: #ffffff;
   color: rgba(255, 255, 255, 0.87);
+  transition: all 0.5s;
+}
+
+#home:hover :first-child {
+  fill: #ffffff;
   transition: all 0.5s;
 }
 
@@ -69,12 +82,46 @@ header {
     gap: 5em;
   }
 
+  #home {
+    font-size: 13px;
+    width: 15vw;
+    box-sizing: content-box;
+  }
+
+  .header-link {
+    box-sizing: border-box;
+  }
+
   #search-link img{
     display: none;
   }
 
   .navbar {
     font-size: small;
+    padding: 0;
   }
 
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    display: block;
+  }
+
+  .home-btn{
+    height: 4.5rem;
+  }
+  
+  #home{
+    width: 5rem;
+  }
+
+  .navbar{
+    height: 3.5rem;
+    width: auto;
+  }
+
+  h1{
+    font-size: 2.8em;
+  }
 }

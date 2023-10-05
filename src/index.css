@@ -23,6 +23,13 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: rgb(255, 53, 53);
+  margin-bottom: 30px;
+}
+
+section {
+  min-height: 100vh;
+  margin: 0 18% 0 18%;
 }
 
 button {
@@ -40,4 +47,30 @@ button:hover {
   background-color: rgb(231, 39, 39);
   transition: all 0.5s;
   
+}
+
+input {
+  padding: 5px 15px;
+  color: black;
+  font-size: medium;
+  background-color: white;
+  border-radius: 25px;
+  width: 97%;
+  height: 3vh;
+  border-style: solid;
+  border-color: rgb(238, 94, 94);
+}
+
+input:focus{
+  outline: 2px solid #e8c2c2;  
+
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+input:focus {
+  outline-color: rgb(236, 136, 136);
+  outline-width: 2px;
 }

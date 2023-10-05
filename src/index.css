@@ -74,3 +74,17 @@ input:focus {
   outline-color: rgb(236, 136, 136);
   outline-width: 2px;
 }
+
+@media screen and (max-width: 768px) {
+  section{
+    /* padding-left: 5vw; */
+    display: grid;
+    align-items: center;
+    place-items: center;
+    
+  }
+
+  h1{
+    padding-left: 5vw;
+  }
+}

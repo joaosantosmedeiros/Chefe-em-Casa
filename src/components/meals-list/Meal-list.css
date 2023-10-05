@@ -63,3 +63,26 @@
 .meal-content h4 {
   height: 22%;
 }
+
+
+@media screen and (max-width: 768px) {
+  .meal-content p {
+    font-size: small;
+  }
+  .meal-content h4 {
+    font-size: small;
+  }
+  
+  .meals-list {
+    display: block;
+  }
+
+  .meal {
+    max-width: 50vw;
+    height: auto;
+  }
+
+  button {
+    margin-bottom: 10px;
+  }
+}

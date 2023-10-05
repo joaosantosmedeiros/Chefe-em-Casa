@@ -32,3 +32,15 @@
   padding: 0 20px;
   height: 22%;
 }
+
+@media screen and (max-width: 768px) {
+  .meal-ing h4{
+    padding-bottom: 10px;
+  }  
+
+  .meal-ing {
+    max-width: 70vw;
+    height: auto;
+  }
+
+}

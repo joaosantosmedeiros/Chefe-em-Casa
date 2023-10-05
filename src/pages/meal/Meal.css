@@ -7,6 +7,11 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
+.meal-unique h1{
+  display: flex;
+  justify-content: center;
+}
+
 .meal-info {
   display: flex;
   gap: 8em;
@@ -14,6 +19,16 @@
 
 .meal-content {
   padding: 0;
+}
+
+.meal-content p {
+  text-align: justify;
+}
+
+.meal-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
 }
 
 .meal-recipe {

@@ -52,7 +52,9 @@ export default function   Meal() {
       {meal && (
         <div className="meal-unique" key={meal.idMeal}>
           <h1>{meal.strMeal}</h1>
-          <img src={meal.strMealThumb} alt={meal.strMeal} />
+          <div className="meal-img">
+            <img src={meal.strMealThumb} alt={meal.strMeal} />
+          </div>
           <div className="meal-content">
             <div className="meal-info">
               <p><b>Categoria:</b> {meal.strCategory}</p>

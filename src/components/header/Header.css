@@ -13,8 +13,9 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: flex-end;
+  padding: 0 15px 0 0;
+  width: 50%;
 }
 
 .navbar a:hover {
@@ -31,7 +32,7 @@ header {
 .navbar li {
   align-items: stretch;
   display: flex;
-  padding: 0;
+  padding: 0 15px 0 0;
 }
 
 .navbar li ul {
@@ -97,6 +98,7 @@ header {
 
   .navbar {
     font-size: small;
+    padding: 0;
   }
 
 }
@@ -111,12 +113,12 @@ header {
   }
   
   #home{
-    /* border-radius: 5px; */
     width: 5rem;
   }
 
   .navbar{
     height: 3.5rem;
+    width: auto;
   }
 
   h1{

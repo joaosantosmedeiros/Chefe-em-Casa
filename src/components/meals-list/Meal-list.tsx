@@ -6,7 +6,7 @@ export default function MealsList(props: { mealList: IMeal[] }) {
   return (
     <div className='meals-list'>
       {props.mealList.map((meal: IMeal) => (
-        <div className='meal' key={meal.idMeal}>
+        <div className='meal' data-testid={meal.idMeal} key={meal.idMeal}>
           <div className='meal-image'>
             <Link to={`/meal/${meal.idMeal}`} ><img src={meal.strMealThumb} alt={meal.strMeal} /></Link>
           </div>
